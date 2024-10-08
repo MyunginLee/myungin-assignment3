@@ -16,7 +16,7 @@ public class ForCollectibles : MonoBehaviour
             collectibles[i] = GameObject.Instantiate(GameObject.Find("Collectible"));
             x = Mathf.Sin(i / 10f) * r;
             y = Mathf.Cos(i / 10f) * r;
-            collectibles[i].transform.position = new Vector3(x, 0, y);
+            collectibles[i].transform.position = new Vector3(x, 0.5f, y);
         }
     }
 
